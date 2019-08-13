@@ -1,0 +1,21 @@
+{
+  "name": "fargate-cdk",
+  "version": "1.0.0",
+  "description": "Demo of deploying react app using CDK and Fargate",
+  "scripts": {
+    "diff": "cdk diff",
+    "deploy": "cdk deploy base-resources application --require-approval never",
+    "synth": "cdk synth --output synth",
+    "destroy": "cdk destroy"
+  },
+  "author": "Eloy Vega",
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "^1.3.0",
+    "@aws-cdk/aws-ecs": "^1.3.0",
+    "@aws-cdk/aws-ecs-patterns": "^1.3.0",
+    "@aws-cdk/core": "^1.3.0"
+  },
+  "devDependencies": {
+    "aws-cdk": "^1.3.0"
+  }
+}
